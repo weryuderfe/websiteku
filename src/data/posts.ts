@@ -2,6 +2,39 @@ import { Post } from '../types';
 
 export const posts: Post[] = [
   {
+    id: '4', // Increment the ID
+    title: 'Judul Artikel Anda',
+    slug: 'judul-artikel-anda', // URL-friendly version of the title
+    permalink: '/2024/03/judul-artikel-anda', // Use current year/month
+    excerpt: 'Ringkasan singkat dari artikel Anda (1-2 kalimat)',
+    content: `
+      <p>Konten artikel Anda dalam format HTML.</p>
+      
+      <h2>Sub Judul Pertama</h2>
+      <p>Paragraf konten Anda.</p>
+      
+      <h2>Sub Judul Kedua</h2>
+      <p>Paragraf konten lainnya.</p>
+      
+      <h3>Detail Penting</h3>
+      <ul>
+        <li>Poin pertama</li>
+        <li>Poin kedua</li>
+        <li>Poin ketiga</li>
+      </ul>
+      
+      <h2>Kesimpulan</h2>
+      <p>Kesimpulan dari artikel Anda.</p>
+    `,
+    image: 'https://images.pexels.com/photos/your-image-id/pexels-photo-your-image-id.jpeg',
+    author: 'Nama Anda',
+    date: '2024-03-14', // Gunakan format YYYY-MM-DD
+    readTime: 5, // Perkiraan waktu baca dalam menit
+    category: 'Kategori Artikel', // Pilih dari: Pertanian, Kuliner, atau Kesehatan
+    tags: ['tag1', 'tag2', 'tag3'] // Tambahkan tag yang relevan
+  },
+  // Artikel yang sudah ada sebelumnya
+  {
     id: '1',
     title: 'Membedakan Beras Organik dan Beras Anorganik',
     slug: 'membedakan-beras-organik-dan-anorganik',
